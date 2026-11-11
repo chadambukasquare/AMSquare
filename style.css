@@ -1,0 +1,56 @@
+.whitebox, body {
+	font-family: system-ui, sans-serif;
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	margin: 0;
+	text-align: center;
+	background-color: coral;
+}
+
+.whitebox {
+	background-color: white;
+	border-radius: 10px;
+}
+a {
+	padding: 0.6rem 1.2rem;
+	font-size: 1rem;
+	border-radius: 8px;
+	border: 0;
+	background: #ec3750;
+	color: white;
+	cursor: pointer;
+}
+
+hr {
+	color: red;
+	width: 500px;
+}
+
+img {
+	height: 200px;
+
+	border-radius: 10px;
+	border-color: black;
+}
+
+@keyframes bounceAnimation {
+
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-40px);
+	}
+}
+
+.flo {
+	animation-name: bounceAnimation;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-fill-mode: both;
+}
